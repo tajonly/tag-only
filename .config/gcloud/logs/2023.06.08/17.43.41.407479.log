@@ -1,0 +1,21 @@
+2023-06-08 17:43:41,467 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-06-08 17:43:41,968 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2023-06-08 17:43:41,971 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "ford-edb67bd0ec6cd881dfcac61b"]
+2023-06-08 17:43:42,036 DEBUG    google.auth.transport.requests Making request: GET http://192.168.10.5/computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/?recursive=true
+2023-06-08 17:43:42,069 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): 192.168.10.5:80
+2023-06-08 17:43:42,070 DEBUG    urllib3.connectionpool http://192.168.10.5:80 "GET /computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/?recursive=true HTTP/1.1" 200 212
+2023-06-08 17:43:42,071 DEBUG    google.auth.transport.requests Making request: GET http://192.168.10.5/computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/token
+2023-06-08 17:43:42,074 DEBUG    urllib3.connectionpool http://192.168.10.5:80 "GET /computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/token HTTP/1.1" 200 270
+2023-06-08 17:43:42,100 DEBUG    google.auth.transport.requests Making request: GET http://192.168.10.5/computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/?recursive=true
+2023-06-08 17:43:42,103 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): 192.168.10.5:80
+2023-06-08 17:43:42,104 DEBUG    urllib3.connectionpool http://192.168.10.5:80 "GET /computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/?recursive=true HTTP/1.1" 200 212
+2023-06-08 17:43:42,105 DEBUG    google.auth.transport.requests Making request: GET http://192.168.10.5/computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/token
+2023-06-08 17:43:42,107 DEBUG    urllib3.connectionpool http://192.168.10.5:80 "GET /computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/token HTTP/1.1" 200 270
+2023-06-08 17:43:42,141 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-06-08 17:43:42,310 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/ford-edb67bd0ec6cd881dfcac61b?alt=json HTTP/1.1" 403 None
+2023-06-08 17:43:42,312 WARNING  root            You do not appear to have access to project [ford-edb67bd0ec6cd881dfcac61b] or it does not exist.
+2023-06-08 17:43:42,314 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2023-06-08 17:43:42,315 DEBUG    root            Chosen display Format:default
+2023-06-08 17:43:42,316 INFO     root            Display format: "default"
+2023-06-08 17:43:42,316 DEBUG    root            SDK update checks are disabled.

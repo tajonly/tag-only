@@ -1,0 +1,36 @@
+2023-06-22 20:59:52,596 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-06-22 20:59:52,598 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-06-22 20:59:52,601 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-06-22 20:59:52,607 DEBUG    google.auth.transport.requests Making request: GET http://192.168.10.5/computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/?recursive=true
+2023-06-22 20:59:52,610 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): 192.168.10.5:80
+2023-06-22 20:59:52,611 DEBUG    urllib3.connectionpool http://192.168.10.5:80 "GET /computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/?recursive=true HTTP/1.1" 200 212
+2023-06-22 20:59:52,612 DEBUG    google.auth.transport.requests Making request: GET http://192.168.10.5/computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/token
+2023-06-22 20:59:52,614 DEBUG    urllib3.connectionpool http://192.168.10.5:80 "GET /computeMetadata/v1/instance/service-accounts/tsingh54@ford.com/token HTTP/1.1" 200 281
+2023-06-22 20:59:52,647 DEBUG    root            Chosen display Format:default json
+2023-06-22 20:59:52,647 INFO     root            Display format: "default json"
+2023-06-22 20:59:52,648 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "billing": {
+        "quota_project": "ford-edb67bd0ec6cd881dfcac61b"
+      },
+      "core": {
+        "account": "tsingh54@ford.com",
+        "disable_usage_reporting": "True",
+        "project": "ford-edb67bd0ec6cd881dfcac61b"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AWY7CklAAjzWeN-aoYxAyJ2dKWg3zXIGIZqYOiKkxNK4e-7mdcTk9Sy27Ya2chXWXeXz7rRcj6V0qhMAS-n9EiIlzKADAhK5AutypEL5zc0dB_qO4hThnLGca3Rwp8lK9Y-tB1FrP7OaEl3rzFcECx--3BsteWA_cS3UlD0aCgYKAcMSARISFQG1tDrpF2quJa9MErPaxB8KaDHi7w0174",
+    "id_token": null,
+    "token_expiry": "2023-06-22T21:30:33Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jupyter/.config/gcloud/config_sentinel"
+  }
+}
+2023-06-22 20:59:52,648 INFO     ___FILE_ONLY___ 
+
+2023-06-22 20:59:52,649 DEBUG    root            SDK update checks are disabled.

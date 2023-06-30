@@ -1,0 +1,34 @@
+{
+  "instance": {
+    "attributes": {
+      "block-project-ssh-keys": "TRUE",
+      "custom-containers": "{}",
+      "enable-guest-attributes": "TRUE",
+      "enable-oslogin": "TRUE",
+      "idle-timeout-seconds": "10800",
+      "install-unattended-upgrades": "False",
+      "notebooks-api": "PROD",
+      "proxy-backend-id": "60f9db168422e80e",
+      "proxy-mode": "mail",
+      "proxy-registration-url": "https://us-west1.notebooks.cloud.google.com/tun/m/4592f092208ecc84946b8f8f8016274df1b36a14",
+      "proxy-url": "60f9db168422e80e-dot-us-west1.notebooks.googleusercontent.com",
+      "proxy-user-mail": "tsingh54@ford.com",
+      "report-system-health": "True",
+      "runtime-owner": "tsingh54@ford.com",
+      "runtime-project-number": "790185476792",
+      "runtime-resource-name": "projects/ford-edb67bd0ec6cd881dfcac61b/locations/us-west1/runtimes/aimltag",
+      "runtime-tenant-project-number": "918150821604",
+      "runtime-uid": "1c81d589-5ffa-4a98-8ecb-810d72a1e03a",
+      "shutdown-script": "/opt/deeplearning/bin/shutdown_script.sh"
+    },
+    "image": "projects/cloud-notebooks-managed/global/images/beatrix-notebooks-v20230327",
+    "machineType": "projects/918150821604/machineTypes/n1-standard-4",
+    "name": "vm-1c81d589-5ffa-4a98-8ecb-810d72a1e03a",
+    "zone": "projects/918150821604/zones/us-west1-b"
+  },
+  "project": {
+    "attributes": {},
+    "numericProjectId": 918150821604,
+    "projectId": "iaf194987454cb170-tp"
+  }
+}

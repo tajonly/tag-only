@@ -1,0 +1,8 @@
+2023-06-27 13:34:59,257 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-06-27 13:34:59,310 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2023-06-27 13:34:59,315 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "billing/quota_project", VALUE: "ford-edb67bd0ec6cd881dfcac61b"]
+2023-06-27 13:34:59,317 INFO     ___FILE_ONLY___ Updated property [billing/quota_project].
+
+2023-06-27 13:34:59,318 DEBUG    root            Chosen display Format:default
+2023-06-27 13:34:59,319 INFO     root            Display format: "default"
+2023-06-27 13:34:59,320 DEBUG    root            SDK update checks are disabled.

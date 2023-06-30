@@ -1,0 +1,6 @@
+[core]
+project = ford-edb67bd0ec6cd881dfcac61b
+
+[billing]
+quota_project = ford-edb67bd0ec6cd881dfcac61b
+

@@ -1,0 +1,12 @@
+2023-06-30 17:45:12,214 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2023-06-30 17:45:12,219 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2023-06-30 17:45:12,274 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'revoke']
+2023-06-30 17:45:12,278 DEBUG    root            Running [gcloud.auth.application-default.revoke] with arguments: [--quiet: "True"]
+2023-06-30 17:45:12,282 DEBUG    google.auth.transport.requests Making request: GET https://accounts.google.com/o/oauth2/revoke?token=1%2F%2F01R2My0DwikebCgYIARAAGAESNwF-L9IrECLb1-X4Gm_H7gJNjHkc40-ajKmJ0ziVBc1uZqj7dgVtgWyOuL7QOMosAeHa9O46s7U
+2023-06-30 17:45:12,309 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2023-06-30 17:45:12,588 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /o/oauth2/revoke?token=1%2F%2F01R2My0DwikebCgYIARAAGAESNwF-L9IrECLb1-X4Gm_H7gJNjHkc40-ajKmJ0ziVBc1uZqj7dgVtgWyOuL7QOMosAeHa9O46s7U HTTP/1.1" 200 None
+2023-06-30 17:45:12,590 INFO     ___FILE_ONLY___ Credentials revoked.
+
+2023-06-30 17:45:12,590 DEBUG    root            Chosen display Format:none
+2023-06-30 17:45:12,591 INFO     root            Display format: "none"
+2023-06-30 17:45:12,591 DEBUG    root            SDK update checks are disabled.

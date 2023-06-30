@@ -1,0 +1,8 @@
+2023-06-27 13:34:14,952 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-06-27 13:34:14,967 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get']
+2023-06-27 13:34:14,970 DEBUG    root            Running [gcloud.config.get] with arguments: [SECTION/PROPERTY: "project"]
+2023-06-27 13:34:14,971 DEBUG    root            Chosen display Format:value(.)
+2023-06-27 13:34:14,971 INFO     root            Display format: "value(.)"
+2023-06-27 13:34:14,972 INFO     ___FILE_ONLY___ ford-edb67bd0ec6cd881dfcac61b
+
+2023-06-27 13:34:14,972 DEBUG    root            SDK update checks are disabled.

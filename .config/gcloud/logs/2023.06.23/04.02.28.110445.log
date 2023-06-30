@@ -1,0 +1,36 @@
+2023-06-23 04:02:28,112 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-06-23 04:02:28,129 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-06-23 04:02:28,132 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-06-23 04:02:28,140 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/notebooks-tp-sa@iaf194987454cb170-tp.iam.gserviceaccount.com/?recursive=true
+2023-06-23 04:02:28,142 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-06-23 04:02:28,145 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/notebooks-tp-sa@iaf194987454cb170-tp.iam.gserviceaccount.com/?recursive=true HTTP/1.1" 200 148
+2023-06-23 04:02:28,145 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/notebooks-tp-sa@iaf194987454cb170-tp.iam.gserviceaccount.com/token
+2023-06-23 04:02:28,149 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/notebooks-tp-sa@iaf194987454cb170-tp.iam.gserviceaccount.com/token HTTP/1.1" 200 869
+2023-06-23 04:02:28,172 DEBUG    root            Chosen display Format:default json
+2023-06-23 04:02:28,172 INFO     root            Display format: "default json"
+2023-06-23 04:02:28,173 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "billing": {
+        "quota_project": "ford-edb67bd0ec6cd881dfcac61b"
+      },
+      "core": {
+        "account": "notebooks-tp-sa@iaf194987454cb170-tp.iam.gserviceaccount.com",
+        "disable_usage_reporting": "True",
+        "project": "ford-edb67bd0ec6cd881dfcac61b"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.c.b0Aaekm1Jy6XxTOw6nOcJXeTkRJYXw8LFGQ6rp7dlIHf9XO5LDmsTMvXMgtuDUDVjl8TMlNfp5LPzEOWPKG1Ca-Y-jFjdFTmwnbjAvohPAxAjuqwU2sinYqeCaS0L0pyqUekvgn_t5LP4e4teFbG2oIH__6YiM3fWrQ6WVSXpoYsxmsUdIyW8ILgqOC-hPV9cbFg-WJOAl4bY1-1LyIVkYqyyCwIYECEM7qNRgNBFZy9b6vNpx81Fr6OmN9ltMvQblzUJI0V_l-I4RZFEG4awslguDzHLcnNrLYQr7GC78WF-K2QlNw9qSXsbybzoJe8HjvOk_kKwTb7Q8gJoE344KlhpSsYIqvSroXqr4dMbm5X2_nBji74WUjapR9oMvqQQ8Sb94ybqjWoOxlMgQUSsFtdggtQrlvORXe0b4I01YQlBZl46-sqm4724nJuXt5sUO56BurxwnzM-a4k-hjXeSSrd-BXqS9wb56BijqbZk2ap_xmY4aj-12rnVa9Q4ylxxt0ehS8lWivo_JRViRBOxhxJgIJdB9JV_MgF10gMnh1I1pJ9lFa6R3vcta_u0nXXfzVujgmFO2I3Ir3O-FRIFRpWQV1hIph6Z3RX30BM7WaIrjYuVJBafaZm-nZlBpvZSd7ppU2zso8RY0uFoWVOW2StOnva0dzWUcwXwnzU0kaveeeBSIVd87X0Xy6akZyVBpcnfVMISJ9bVXy0S24y5Swnk5flirqdfJ9B3molxw253g461Zyrnd_4j3nctFFMtRr48VaIYbk5_ZzUkiv73jcgR8dlg8tf9uwVccnFai9kWmuxbky_l8w3wb-lMrh51lnlqmejZk9F4oFVUQxUlZ5sOoxyyXr3o8fiMzUmRU2IciS4m7mRsY3v565ponnwyidt_u5xembr899MjOim6S7isxM8uiSRURqdeIs-s3mvgX84ZVSyunjaoZan1oSFIoWl3-Zx6Uy2F_ecSRS-qmwx5rxXikfxu1xYvOIW8sz4qMn80u92kYFz",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjA1MTUwYTEzMjBiOTM5NWIwNTcxNjg3NzM3NjkyODUwOWJhYjQ0YWMiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF6cCI6IjEwOTI2NjY0NjMzMjAxODA1MjEwMSIsImV4cCI6MTY4NzQ5NjU0OCwiaWF0IjoxNjg3NDkyOTQ4LCJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJzdWIiOiIxMDkyNjY2NDYzMzIwMTgwNTIxMDEifQ.BKrsuPJuYphQ0XWBXO1z3n64uWvq2dVn2NEt0aTe9jGL6naU8hsMg9oj-5PttMCrInCMsEFkqsHgzdDSRQ7SJJgbXIXkZdqhPU_Bfk-uSZM3OzWnAlNnmwNJOkd7py0MOsMUZDKXgNM4utsfSp09igApi1NKdTMkx0yv02aDFP6FgExNy2vzevP-Vm0K87IOxmRO6Zw8iFuFHetHzpOXQj4u7dp0bouQK2jX79WI2yGqFznjzCgcLjvDaf30TsgsRqBRl0ZeQTMrf2mVOFtKEBvRShiRy2ETH1cjVtxGDefn0WhUVN27cxoGfHRwoEhSN2mCW_6uO7GhV51J2ENWGw",
+    "token_expiry": "2023-06-23T04:40:34Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jupyter/.config/gcloud/config_sentinel"
+  }
+}
+2023-06-23 04:02:28,173 INFO     ___FILE_ONLY___ 
+
+2023-06-23 04:02:28,174 DEBUG    root            SDK update checks are disabled.

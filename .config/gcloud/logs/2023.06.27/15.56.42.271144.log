@@ -1,0 +1,12 @@
+2023-06-27 15:56:42,272 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2023-06-27 15:56:42,274 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2023-06-27 15:56:42,275 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'print_access_token']
+2023-06-27 15:56:42,278 DEBUG    root            Running [gcloud.auth.application-default.print-access-token] with arguments: []
+2023-06-27 15:56:43,214 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-06-27 15:56:43,217 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-06-27 15:56:43,343 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-06-27 15:56:43,346 DEBUG    root            Chosen display Format:value(token)
+2023-06-27 15:56:43,347 INFO     root            Display format: "value(token)"
+2023-06-27 15:56:43,348 INFO     ___FILE_ONLY___ ya29.a0AWY7CkmNBY2QzgED2W74kYx7BlLbda3YqRW46npjtflQ_lqqNS_6WJYpCHkvdzJgE9kQSSUzaFUYtztwGaX6-u7DUEO5k7QCjWyxSr4snANMPYm1TjOMISYtB75AJVOkmTqqyuyLyE2SvgX9P5cBJbzpgF_YkdxPh8N6p5caCgYKAXoSARISFQG1tDrpCfUem-kPkfkmIPnMGEyLtg0174
+
+2023-06-27 15:56:43,349 DEBUG    root            SDK update checks are disabled.

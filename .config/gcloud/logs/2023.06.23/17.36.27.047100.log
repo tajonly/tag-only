@@ -1,0 +1,76 @@
+2023-06-23 17:36:27,049 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-06-23 17:36:27,051 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-06-23 17:36:27,054 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-06-23 17:37:47,132 DEBUG    root            (gcloud.config.config-helper) timed out
+This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 307, in DecoratedFunction
+    return retryer.RetryOnException(f, args=args, kwargs=kwargs,
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 197, in RetryOnException
+    result, exc_info = self.RetryOnResult(
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 256, in RetryOnResult
+    self._RaiseIfStop(result, state)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 115, in _RaiseIfStop
+    raise MaxRetrialsException('Reached', result, state)
+googlecloudsdk.core.util.retry.MaxRetrialsException: last_result=(None, (<class 'socket.timeout'>, timeout('timed out'), <traceback object at 0x7f1408f124c0>)), last_retrial=3, time_passed_ms=80077,time_to_wait=0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/usr/lib/google-cloud-sdk/lib/surface/config/config_helper.py", line 99, in Run
+    cred = store.Load(use_google_auth=True)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 565, in Load
+    cred = _Load(
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 730, in _Load
+    account = properties.VALUES.core.account.Get()
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3717, in Get
+    property_value = self.GetPropertyValue(required, validate)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3736, in GetPropertyValue
+    property_value = _GetProperty(self,
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4058, in _GetProperty
+    property_value = _GetPropertyWithoutDefault(prop, properties_file)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4113, in _GetPropertyWithoutDefault
+    value = callback()
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 180, in GetAccount
+    return c_gce.Metadata().DefaultAccount()
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce.py", line 88, in Inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce.py", line 129, in DefaultAccount
+    return _ReadNoProxyWithCleanFailures(
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 312, in DecoratedFunction
+    exceptions.reraise(to_reraise[1], tb=to_reraise[2])
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 182, in TryFunc
+    return func(*args, **kwargs), None
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce.py", line 54, in _ReadNoProxyWithCleanFailures
+    return gce_read.ReadNoProxy(uri, timeout)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/gce_read.py", line 59, in ReadNoProxy
+    result = urllib.request.build_opener(urllib.request.ProxyHandler({})).open(
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/urllib/request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/google-cloud-sdk/platform/bundledpythonunix/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+2023-06-23 17:37:47,136 ERROR    root            (gcloud.config.config-helper) timed out
+This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.

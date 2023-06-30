@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "0.0.0.0",
+  "password": false,
+  "pid": 13,
+  "port": 8080,
+  "root_dir": "/home/jupyter",
+  "secure": false,
+  "sock": "",
+  "token": "",
+  "url": "http://vm-1c81d589-5ffa-4a98-8ecb-810d72a1e03a:8080/",
+  "version": "1.23.6"
+}
